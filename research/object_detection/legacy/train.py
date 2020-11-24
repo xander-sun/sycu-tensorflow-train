@@ -45,6 +45,7 @@ import functools
 import json
 import os
 import tensorflow.compat.v1 as tf
+
 from tensorflow.python.util.deprecation import deprecated
 
 
@@ -54,6 +55,7 @@ from object_detection.builders import model_builder
 from object_detection.legacy import trainer
 from object_detection.utils import config_util
 
+tf.compat.v1.disable_eager_execution()
 tf.logging.set_verbosity(tf.logging.INFO)
 
 flags = tf.app.flags

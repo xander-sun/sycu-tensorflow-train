@@ -11,6 +11,6 @@
 train_code_path="/home/ys/tensorflow_test/train_code/sycu-tensorflow-train/research/object_detection/legacy/"
 python3 ${train_code_path}train.py \
 --logtostderr \
---train_dir=path/to/train_dir \
---pipeline_config_path=pipeline_config.pbtxt
+--train_dir="/home/ys/tensorflow_test/nets/sycu_ssd_mobilenet_v1_fpn_keras" \
+--pipeline_config_path="/home/ys/tensorflow_test/nets/sycu_ssd_mobilenet_v1_fpn_keras/sycu_ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8.config"
 

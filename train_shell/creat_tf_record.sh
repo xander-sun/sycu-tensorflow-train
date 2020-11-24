@@ -20,5 +20,5 @@ python3 /home/ys/tensorflow_test/train_code/sycu-tensorflow-train/research/objec
 --label_map_path=${label_map_path} \
 --data_dir=${data_dir} \
 --output_dir=${output_dir} \
---num_shards=10
+--num_shards=2
 
