@@ -131,7 +131,9 @@ def dict_to_tf_example(data,
 
   width = int(data['size']['width'])
   height = int(data['size']['height'])
-
+  if width == 0.0 or height == 0.0:
+    logging.warning('image %s is none, ignoring example.', img_path)
+    return None
   xmins = []
   ymins = []
   xmaxs = []
@@ -167,6 +169,7 @@ def dict_to_tf_example(data,
       #class_name = get_class_name_from_filename(data['filename'])
       class_name = obj["name"]
       classes_text.append(class_name.encode('utf8'))
+      #print(img_path)
       classes.append(label_map_dict[class_name])
       truncated.append(int(obj['truncated']))
       poses.append(obj['pose'].encode('utf8'))
@@ -258,6 +261,10 @@ def create_tf_record(output_filename,
       data = dataset_util.recursive_parse_xml_to_dict(xml)['annotation']
       
       img_path = os.path.join(image_dir, name_lst[2], data['filename'])
+
+      if not os.path.exists(img_path):
+        logging.warning('Could not find %s, ignoring example.', img_path)
+        continue
 
       try:
         tf_example = dict_to_tf_example(

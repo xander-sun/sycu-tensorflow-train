@@ -8,8 +8,8 @@
 #PATH=/home/ys/bin:/usr/local/sbin:/usr/local/bin
 #export PATH
 
-labelimg_path="/home/ys/tensorflow_test/data_set/sycu_20201124"
-python3 /home/ys/tensorflow_test/train_code/sycu-tensorflow-train/research/object_detection/dataset_tools/mk_trainval_from_labelimg.py \
+labelimg_path="/home/xys/tensorflow_test/data_set/sycu_20201124"
+python3 /home/xys/tensorflow_test/train_code/sycu-tensorflow-train/research/object_detection/dataset_tools/mk_trainval_from_labelimg.py \
 --labelimg_path=${labelimg_path} \
 --out_dir=${labelimg_path} 
 

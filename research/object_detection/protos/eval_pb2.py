@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='object_detection/protos/eval.proto',
   package='object_detection.protos',
   syntax='proto2',
-  serialized_pb=_b('\n\"object_detection/protos/eval.proto\x12\x17object_detection.protos\"\x81\n\n\nEvalConfig\x12\x15\n\nbatch_size\x18\x19 \x01(\r:\x01\x31\x12\x1e\n\x12num_visualizations\x18\x01 \x01(\r:\x02\x31\x30\x12\x1e\n\x0cnum_examples\x18\x02 \x01(\r:\x04\x35\x30\x30\x30\x42\x02\x18\x01\x12\x1f\n\x12\x65val_interval_secs\x18\x03 \x01(\r:\x03\x33\x30\x30\x12\x18\n\tmax_evals\x18\x04 \x01(\r:\x01\x30\x42\x02\x18\x01\x12\x19\n\nsave_graph\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\"\n\x18visualization_export_dir\x18\x06 \x01(\t:\x00\x12\x15\n\x0b\x65val_master\x18\x07 \x01(\t:\x00\x12\x13\n\x0bmetrics_set\x18\x08 \x03(\t\x12J\n\x14parameterized_metric\x18\x1f \x03(\x0b\x32,.object_detection.protos.ParameterizedMetric\x12\x15\n\x0b\x65xport_path\x18\t \x01(\t:\x00\x12!\n\x12ignore_groundtruth\x18\n \x01(\x08:\x05\x66\x61lse\x12\"\n\x13use_moving_averages\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x65val_instance_masks\x18\x0c \x01(\x08:\x05\x66\x61lse\x12 \n\x13min_score_threshold\x18\r \x01(\x02:\x03\x30.5\x12&\n\x1amax_num_boxes_to_visualize\x18\x0e \x01(\x05:\x02\x32\x30\x12\x1a\n\x0bskip_scores\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bskip_labels\x18\x10 \x01(\x08:\x05\x66\x61lse\x12*\n\x1bvisualize_groundtruth_boxes\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x32\n#groundtruth_box_visualization_color\x18\x12 \x01(\t:\x05\x62lack\x12\x35\n&keep_image_id_for_visualization_export\x18\x13 \x01(\x08:\x05\x66\x61lse\x12$\n\x16retain_original_images\x18\x17 \x01(\x08:\x04true\x12+\n\x1cinclude_metrics_per_category\x18\x18 \x01(\x08:\x05\x66\x61lse\x12R\n\x10super_categories\x18\" \x03(\x0b\x32\x38.object_detection.protos.EvalConfig.SuperCategoriesEntry\x12\x1d\n\x12recall_lower_bound\x18\x1a \x01(\x02:\x01\x30\x12\x1d\n\x12recall_upper_bound\x18\x1b \x01(\x02:\x01\x31\x12\x38\n)retain_original_image_additional_channels\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x66orce_no_resize\x18\x1d \x01(\x08:\x05\x66\x61lse\x12%\n\x16use_dummy_loss_in_eval\x18\x1e \x01(\x08:\x05\x66\x61lse\x12<\n\rkeypoint_edge\x18  \x03(\x0b\x32%.object_detection.protos.KeypointEdge\x12\x33\n$skip_predictions_for_unlabeled_class\x18! \x01(\x08:\x05\x66\x61lse\x1a\x36\n\x14SuperCategoriesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"|\n\x13ParameterizedMetric\x12M\n\x15\x63oco_keypoint_metrics\x18\x01 \x01(\x0b\x32,.object_detection.protos.CocoKeypointMetricsH\x00\x42\x16\n\x14parameterized_metric\"\xd3\x01\n\x13\x43ocoKeypointMetrics\x12\x13\n\x0b\x63lass_label\x18\x01 \x01(\t\x12i\n\x18keypoint_label_to_sigmas\x18\x02 \x03(\x0b\x32G.object_detection.protos.CocoKeypointMetrics.KeypointLabelToSigmasEntry\x1a<\n\x1aKeypointLabelToSigmasEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\"*\n\x0cKeypointEdge\x12\r\n\x05start\x18\x01 \x01(\x05\x12\x0b\n\x03\x65nd\x18\x02 \x01(\x05')
+  serialized_pb=_b('\n\"object_detection/protos/eval.proto\x12\x17object_detection.protos\"\xaa\n\n\nEvalConfig\x12\x15\n\nbatch_size\x18\x19 \x01(\r:\x01\x31\x12\x1e\n\x12num_visualizations\x18\x01 \x01(\r:\x02\x31\x30\x12\x1e\n\x0cnum_examples\x18\x02 \x01(\r:\x04\x35\x30\x30\x30\x42\x02\x18\x01\x12\x1f\n\x12\x65val_interval_secs\x18\x03 \x01(\r:\x03\x33\x30\x30\x12\x18\n\tmax_evals\x18\x04 \x01(\r:\x01\x30\x42\x02\x18\x01\x12\x19\n\nsave_graph\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\"\n\x18visualization_export_dir\x18\x06 \x01(\t:\x00\x12\x15\n\x0b\x65val_master\x18\x07 \x01(\t:\x00\x12\x13\n\x0bmetrics_set\x18\x08 \x03(\t\x12J\n\x14parameterized_metric\x18\x1f \x03(\x0b\x32,.object_detection.protos.ParameterizedMetric\x12\x15\n\x0b\x65xport_path\x18\t \x01(\t:\x00\x12!\n\x12ignore_groundtruth\x18\n \x01(\x08:\x05\x66\x61lse\x12\"\n\x13use_moving_averages\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x65val_instance_masks\x18\x0c \x01(\x08:\x05\x66\x61lse\x12 \n\x13min_score_threshold\x18\r \x01(\x02:\x03\x30.5\x12&\n\x1amax_num_boxes_to_visualize\x18\x0e \x01(\x05:\x02\x32\x30\x12\x1a\n\x0bskip_scores\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bskip_labels\x18\x10 \x01(\x08:\x05\x66\x61lse\x12*\n\x1bvisualize_groundtruth_boxes\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x32\n#groundtruth_box_visualization_color\x18\x12 \x01(\t:\x05\x62lack\x12\x35\n&keep_image_id_for_visualization_export\x18\x13 \x01(\x08:\x05\x66\x61lse\x12$\n\x16retain_original_images\x18\x17 \x01(\x08:\x04true\x12+\n\x1cinclude_metrics_per_category\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18\x61ll_metrics_per_category\x18# \x01(\x08:\x05\x66\x61lse\x12R\n\x10super_categories\x18\" \x03(\x0b\x32\x38.object_detection.protos.EvalConfig.SuperCategoriesEntry\x12\x1d\n\x12recall_lower_bound\x18\x1a \x01(\x02:\x01\x30\x12\x1d\n\x12recall_upper_bound\x18\x1b \x01(\x02:\x01\x31\x12\x38\n)retain_original_image_additional_channels\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x66orce_no_resize\x18\x1d \x01(\x08:\x05\x66\x61lse\x12%\n\x16use_dummy_loss_in_eval\x18\x1e \x01(\x08:\x05\x66\x61lse\x12<\n\rkeypoint_edge\x18  \x03(\x0b\x32%.object_detection.protos.KeypointEdge\x12\x33\n$skip_predictions_for_unlabeled_class\x18! \x01(\x08:\x05\x66\x61lse\x1a\x36\n\x14SuperCategoriesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"|\n\x13ParameterizedMetric\x12M\n\x15\x63oco_keypoint_metrics\x18\x01 \x01(\x0b\x32,.object_detection.protos.CocoKeypointMetricsH\x00\x42\x16\n\x14parameterized_metric\"\xd3\x01\n\x13\x43ocoKeypointMetrics\x12\x13\n\x0b\x63lass_label\x18\x01 \x01(\t\x12i\n\x18keypoint_label_to_sigmas\x18\x02 \x03(\x0b\x32G.object_detection.protos.CocoKeypointMetrics.KeypointLabelToSigmasEntry\x1a<\n\x1aKeypointLabelToSigmasEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\"*\n\x0cKeypointEdge\x12\r\n\x05start\x18\x01 \x01(\x05\x12\x0b\n\x03\x65nd\x18\x02 \x01(\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -59,8 +59,8 @@ _EVALCONFIG_SUPERCATEGORIESENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1291,
-  serialized_end=1345,
+  serialized_start=1332,
+  serialized_end=1386,
 )
 
 _EVALCONFIG = _descriptor.Descriptor(
@@ -232,56 +232,63 @@ _EVALCONFIG = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='super_categories', full_name='object_detection.protos.EvalConfig.super_categories', index=23,
+      name='all_metrics_per_category', full_name='object_detection.protos.EvalConfig.all_metrics_per_category', index=23,
+      number=35, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='super_categories', full_name='object_detection.protos.EvalConfig.super_categories', index=24,
       number=34, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='recall_lower_bound', full_name='object_detection.protos.EvalConfig.recall_lower_bound', index=24,
+      name='recall_lower_bound', full_name='object_detection.protos.EvalConfig.recall_lower_bound', index=25,
       number=26, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='recall_upper_bound', full_name='object_detection.protos.EvalConfig.recall_upper_bound', index=25,
+      name='recall_upper_bound', full_name='object_detection.protos.EvalConfig.recall_upper_bound', index=26,
       number=27, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='retain_original_image_additional_channels', full_name='object_detection.protos.EvalConfig.retain_original_image_additional_channels', index=26,
+      name='retain_original_image_additional_channels', full_name='object_detection.protos.EvalConfig.retain_original_image_additional_channels', index=27,
       number=28, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='force_no_resize', full_name='object_detection.protos.EvalConfig.force_no_resize', index=27,
+      name='force_no_resize', full_name='object_detection.protos.EvalConfig.force_no_resize', index=28,
       number=29, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='use_dummy_loss_in_eval', full_name='object_detection.protos.EvalConfig.use_dummy_loss_in_eval', index=28,
+      name='use_dummy_loss_in_eval', full_name='object_detection.protos.EvalConfig.use_dummy_loss_in_eval', index=29,
       number=30, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='keypoint_edge', full_name='object_detection.protos.EvalConfig.keypoint_edge', index=29,
+      name='keypoint_edge', full_name='object_detection.protos.EvalConfig.keypoint_edge', index=30,
       number=32, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='skip_predictions_for_unlabeled_class', full_name='object_detection.protos.EvalConfig.skip_predictions_for_unlabeled_class', index=30,
+      name='skip_predictions_for_unlabeled_class', full_name='object_detection.protos.EvalConfig.skip_predictions_for_unlabeled_class', index=31,
       number=33, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -300,7 +307,7 @@ _EVALCONFIG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=64,
-  serialized_end=1345,
+  serialized_end=1386,
 )
 
 
@@ -333,8 +340,8 @@ _PARAMETERIZEDMETRIC = _descriptor.Descriptor(
       name='parameterized_metric', full_name='object_detection.protos.ParameterizedMetric.parameterized_metric',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=1347,
-  serialized_end=1471,
+  serialized_start=1388,
+  serialized_end=1512,
 )
 
 
@@ -371,8 +378,8 @@ _COCOKEYPOINTMETRICS_KEYPOINTLABELTOSIGMASENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1625,
-  serialized_end=1685,
+  serialized_start=1666,
+  serialized_end=1726,
 )
 
 _COCOKEYPOINTMETRICS = _descriptor.Descriptor(
@@ -408,8 +415,8 @@ _COCOKEYPOINTMETRICS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1474,
-  serialized_end=1685,
+  serialized_start=1515,
+  serialized_end=1726,
 )
 
 
@@ -446,8 +453,8 @@ _KEYPOINTEDGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1687,
-  serialized_end=1729,
+  serialized_start=1728,
+  serialized_end=1770,
 )
 
 _EVALCONFIG_SUPERCATEGORIESENTRY.containing_type = _EVALCONFIG

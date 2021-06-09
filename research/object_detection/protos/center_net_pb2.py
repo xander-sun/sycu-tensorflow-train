@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='object_detection/protos/center_net.proto',
   package='object_detection.protos',
   syntax='proto2',
-  serialized_pb=_b('\n(object_detection/protos/center_net.proto\x12\x17object_detection.protos\x1a+object_detection/protos/image_resizer.proto\x1a$object_detection/protos/losses.proto\"\xa5\x15\n\tCenterNet\x12\x13\n\x0bnum_classes\x18\x01 \x01(\x05\x12M\n\x11\x66\x65\x61ture_extractor\x18\x02 \x01(\x0b\x32\x32.object_detection.protos.CenterNetFeatureExtractor\x12<\n\rimage_resizer\x18\x03 \x01(\x0b\x32%.object_detection.protos.ImageResizer\x12Q\n\x15object_detection_task\x18\x04 \x01(\x0b\x32\x32.object_detection.protos.CenterNet.ObjectDetection\x12S\n\x14object_center_params\x18\x05 \x01(\x0b\x32\x35.object_detection.protos.CenterNet.ObjectCenterParams\x12\x1f\n\x17keypoint_label_map_path\x18\x06 \x01(\t\x12W\n\x18keypoint_estimation_task\x18\x07 \x03(\x0b\x32\x35.object_detection.protos.CenterNet.KeypointEstimation\x12O\n\x14mask_estimation_task\x18\x08 \x01(\x0b\x32\x31.object_detection.protos.CenterNet.MaskEstimation\x12Y\n\x19\x64\x65nsepose_estimation_task\x18\t \x01(\x0b\x32\x36.object_detection.protos.CenterNet.DensePoseEstimation\x12Q\n\x15track_estimation_task\x18\n \x01(\x0b\x32\x32.object_detection.protos.CenterNet.TrackEstimation\x1a\xcb\x01\n\x0fObjectDetection\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x1d\n\x12offset_loss_weight\x18\x03 \x01(\x02:\x01\x31\x12\x1e\n\x11scale_loss_weight\x18\x04 \x01(\x02:\x03\x30.1\x12\x44\n\x11localization_loss\x18\x08 \x01(\x0b\x32).object_detection.protos.LocalizationLossJ\x04\x08\x02\x10\x03J\x04\x08\x05\x10\x06J\x04\x08\x06\x10\x07J\x04\x08\x07\x10\x08\x1a\x8e\x02\n\x12ObjectCenterParams\x12$\n\x19object_center_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12H\n\x13\x63lassification_loss\x18\x02 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\x12 \n\x11heatmap_bias_init\x18\x03 \x01(\x02:\x05-2.19\x12 \n\x13min_box_overlap_iou\x18\x04 \x01(\x02:\x03\x30.7\x12 \n\x13max_box_predictions\x18\x05 \x01(\x05:\x03\x31\x30\x30\x12\"\n\x13use_labeled_classes\x18\x06 \x01(\x08:\x05\x66\x61lse\x1a\xac\x06\n\x12KeypointEstimation\x12\x11\n\ttask_name\x18\x01 \x01(\t\x12\x1b\n\x10task_loss_weight\x18\x02 \x01(\x02:\x01\x31\x12+\n\x04loss\x18\x03 \x01(\x0b\x32\x1d.object_detection.protos.Loss\x12\x1b\n\x13keypoint_class_name\x18\x04 \x01(\t\x12l\n\x15keypoint_label_to_std\x18\x05 \x03(\x0b\x32M.object_detection.protos.CenterNet.KeypointEstimation.KeypointLabelToStdEntry\x12*\n\x1fkeypoint_regression_loss_weight\x18\x06 \x01(\x02:\x01\x31\x12\'\n\x1ckeypoint_heatmap_loss_weight\x18\x07 \x01(\x02:\x01\x31\x12&\n\x1bkeypoint_offset_loss_weight\x18\x08 \x01(\x02:\x01\x31\x12 \n\x11heatmap_bias_init\x18\t \x01(\x02:\x05-2.19\x12/\n\"keypoint_candidate_score_threshold\x18\n \x01(\x02:\x03\x30.1\x12(\n\x1bnum_candidates_per_keypoint\x18\x0b \x01(\x05:\x03\x31\x30\x30\x12$\n\x19peak_max_pool_kernel_size\x18\x0c \x01(\x05:\x01\x33\x12%\n\x18unmatched_keypoint_score\x18\r \x01(\x02:\x03\x30.1\x12\x16\n\tbox_scale\x18\x0e \x01(\x02:\x03\x31.2\x12#\n\x16\x63\x61ndidate_search_scale\x18\x0f \x01(\x02:\x03\x30.3\x12,\n\x16\x63\x61ndidate_ranking_mode\x18\x10 \x01(\t:\x0cmin_distance\x12\x1d\n\x12offset_peak_radius\x18\x11 \x01(\x05:\x01\x30\x12\"\n\x13per_keypoint_offset\x18\x12 \x01(\x08:\x05\x66\x61lse\x1a\x39\n\x17KeypointLabelToStdEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x1a\xea\x01\n\x0eMaskEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12H\n\x13\x63lassification_loss\x18\x02 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\x12\x18\n\x0bmask_height\x18\x04 \x01(\x05:\x03\x32\x35\x36\x12\x17\n\nmask_width\x18\x05 \x01(\x05:\x03\x32\x35\x36\x12\x1c\n\x0fscore_threshold\x18\x06 \x01(\x02:\x03\x30.5\x12 \n\x11heatmap_bias_init\x18\x03 \x01(\x02:\x05-2.19\x1a\x8f\x02\n\x13\x44\x65nsePoseEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x10\n\x08\x63lass_id\x18\x02 \x01(\x05\x12+\n\x04loss\x18\x03 \x01(\x0b\x32\x1d.object_detection.protos.Loss\x12\x15\n\tnum_parts\x18\x04 \x01(\x05:\x02\x32\x34\x12\x1b\n\x10part_loss_weight\x18\x05 \x01(\x02:\x01\x31\x12!\n\x16\x63oordinate_loss_weight\x18\x06 \x01(\x02:\x01\x31\x12#\n\x15upsample_to_input_res\x18\x07 \x01(\x08:\x04true\x12 \n\x11heatmap_bias_init\x18\x08 \x01(\x02:\x05-2.19\x1a\xc7\x01\n\x0fTrackEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x15\n\rnum_track_ids\x18\x02 \x01(\x05\x12\x1c\n\x0freid_embed_size\x18\x03 \x01(\x05:\x03\x31\x32\x38\x12\x18\n\rnum_fc_layers\x18\x04 \x01(\x05:\x01\x31\x12H\n\x13\x63lassification_loss\x18\x05 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\"s\n\x19\x43\x65nterNetFeatureExtractor\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x15\n\rchannel_means\x18\x02 \x03(\x02\x12\x14\n\x0c\x63hannel_stds\x18\x03 \x03(\x02\x12\x1b\n\x0c\x62gr_ordering\x18\x04 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n(object_detection/protos/center_net.proto\x12\x17object_detection.protos\x1a+object_detection/protos/image_resizer.proto\x1a$object_detection/protos/losses.proto\"\xc4\x17\n\tCenterNet\x12\x13\n\x0bnum_classes\x18\x01 \x01(\x05\x12M\n\x11\x66\x65\x61ture_extractor\x18\x02 \x01(\x0b\x32\x32.object_detection.protos.CenterNetFeatureExtractor\x12<\n\rimage_resizer\x18\x03 \x01(\x0b\x32%.object_detection.protos.ImageResizer\x12\x1c\n\ruse_depthwise\x18\r \x01(\x08:\x05\x66\x61lse\x12%\n\x16\x63ompute_heatmap_sparse\x18\x0f \x01(\x08:\x05\x66\x61lse\x12Q\n\x15object_detection_task\x18\x04 \x01(\x0b\x32\x32.object_detection.protos.CenterNet.ObjectDetection\x12S\n\x14object_center_params\x18\x05 \x01(\x0b\x32\x35.object_detection.protos.CenterNet.ObjectCenterParams\x12\x1f\n\x17keypoint_label_map_path\x18\x06 \x01(\t\x12W\n\x18keypoint_estimation_task\x18\x07 \x03(\x0b\x32\x35.object_detection.protos.CenterNet.KeypointEstimation\x12O\n\x14mask_estimation_task\x18\x08 \x01(\x0b\x32\x31.object_detection.protos.CenterNet.MaskEstimation\x12Y\n\x19\x64\x65nsepose_estimation_task\x18\t \x01(\x0b\x32\x36.object_detection.protos.CenterNet.DensePoseEstimation\x12Q\n\x15track_estimation_task\x18\n \x01(\x0b\x32\x32.object_detection.protos.CenterNet.TrackEstimation\x12Y\n\x14temporal_offset_task\x18\x0c \x01(\x0b\x32;.object_detection.protos.CenterNet.TemporalOffsetEstimation\x1a\xcb\x01\n\x0fObjectDetection\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x1d\n\x12offset_loss_weight\x18\x03 \x01(\x02:\x01\x31\x12\x1e\n\x11scale_loss_weight\x18\x04 \x01(\x02:\x03\x30.1\x12\x44\n\x11localization_loss\x18\x08 \x01(\x0b\x32).object_detection.protos.LocalizationLossJ\x04\x08\x02\x10\x03J\x04\x08\x05\x10\x06J\x04\x08\x06\x10\x07J\x04\x08\x07\x10\x08\x1a\x8e\x02\n\x12ObjectCenterParams\x12$\n\x19object_center_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12H\n\x13\x63lassification_loss\x18\x02 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\x12 \n\x11heatmap_bias_init\x18\x03 \x01(\x02:\x05-2.19\x12 \n\x13min_box_overlap_iou\x18\x04 \x01(\x02:\x03\x30.7\x12 \n\x13max_box_predictions\x18\x05 \x01(\x05:\x03\x31\x30\x30\x12\"\n\x13use_labeled_classes\x18\x06 \x01(\x08:\x05\x66\x61lse\x1a\xac\x06\n\x12KeypointEstimation\x12\x11\n\ttask_name\x18\x01 \x01(\t\x12\x1b\n\x10task_loss_weight\x18\x02 \x01(\x02:\x01\x31\x12+\n\x04loss\x18\x03 \x01(\x0b\x32\x1d.object_detection.protos.Loss\x12\x1b\n\x13keypoint_class_name\x18\x04 \x01(\t\x12l\n\x15keypoint_label_to_std\x18\x05 \x03(\x0b\x32M.object_detection.protos.CenterNet.KeypointEstimation.KeypointLabelToStdEntry\x12*\n\x1fkeypoint_regression_loss_weight\x18\x06 \x01(\x02:\x01\x31\x12\'\n\x1ckeypoint_heatmap_loss_weight\x18\x07 \x01(\x02:\x01\x31\x12&\n\x1bkeypoint_offset_loss_weight\x18\x08 \x01(\x02:\x01\x31\x12 \n\x11heatmap_bias_init\x18\t \x01(\x02:\x05-2.19\x12/\n\"keypoint_candidate_score_threshold\x18\n \x01(\x02:\x03\x30.1\x12(\n\x1bnum_candidates_per_keypoint\x18\x0b \x01(\x05:\x03\x31\x30\x30\x12$\n\x19peak_max_pool_kernel_size\x18\x0c \x01(\x05:\x01\x33\x12%\n\x18unmatched_keypoint_score\x18\r \x01(\x02:\x03\x30.1\x12\x16\n\tbox_scale\x18\x0e \x01(\x02:\x03\x31.2\x12#\n\x16\x63\x61ndidate_search_scale\x18\x0f \x01(\x02:\x03\x30.3\x12,\n\x16\x63\x61ndidate_ranking_mode\x18\x10 \x01(\t:\x0cmin_distance\x12\x1d\n\x12offset_peak_radius\x18\x11 \x01(\x05:\x01\x30\x12\"\n\x13per_keypoint_offset\x18\x12 \x01(\x08:\x05\x66\x61lse\x1a\x39\n\x17KeypointLabelToStdEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x1a\xea\x01\n\x0eMaskEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12H\n\x13\x63lassification_loss\x18\x02 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\x12\x18\n\x0bmask_height\x18\x04 \x01(\x05:\x03\x32\x35\x36\x12\x17\n\nmask_width\x18\x05 \x01(\x05:\x03\x32\x35\x36\x12\x1c\n\x0fscore_threshold\x18\x06 \x01(\x02:\x03\x30.5\x12 \n\x11heatmap_bias_init\x18\x03 \x01(\x02:\x05-2.19\x1a\x8f\x02\n\x13\x44\x65nsePoseEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x10\n\x08\x63lass_id\x18\x02 \x01(\x05\x12+\n\x04loss\x18\x03 \x01(\x0b\x32\x1d.object_detection.protos.Loss\x12\x15\n\tnum_parts\x18\x04 \x01(\x05:\x02\x32\x34\x12\x1b\n\x10part_loss_weight\x18\x05 \x01(\x02:\x01\x31\x12!\n\x16\x63oordinate_loss_weight\x18\x06 \x01(\x02:\x01\x31\x12#\n\x15upsample_to_input_res\x18\x07 \x01(\x08:\x04true\x12 \n\x11heatmap_bias_init\x18\x08 \x01(\x02:\x05-2.19\x1a\xc7\x01\n\x0fTrackEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x15\n\rnum_track_ids\x18\x02 \x01(\x05\x12\x1c\n\x0freid_embed_size\x18\x03 \x01(\x05:\x03\x31\x32\x38\x12\x18\n\rnum_fc_layers\x18\x04 \x01(\x05:\x01\x31\x12H\n\x13\x63lassification_loss\x18\x05 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\x1a}\n\x18TemporalOffsetEstimation\x12\x1b\n\x10task_loss_weight\x18\x01 \x01(\x02:\x01\x31\x12\x44\n\x11localization_loss\x18\x02 \x01(\x0b\x32).object_detection.protos.LocalizationLoss\"\x91\x01\n\x19\x43\x65nterNetFeatureExtractor\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x15\n\rchannel_means\x18\x02 \x03(\x02\x12\x14\n\x0c\x63hannel_stds\x18\x03 \x03(\x02\x12\x1b\n\x0c\x62gr_ordering\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\ruse_depthwise\x18\x05 \x01(\x08:\x05\x66\x61lse')
   ,
   dependencies=[object__detection_dot_protos_dot_image__resizer__pb2.DESCRIPTOR,object__detection_dot_protos_dot_losses__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -76,8 +76,8 @@ _CENTERNET_OBJECTDETECTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=874,
-  serialized_end=1077,
+  serialized_start=1034,
+  serialized_end=1237,
 )
 
 _CENTERNET_OBJECTCENTERPARAMS = _descriptor.Descriptor(
@@ -141,8 +141,8 @@ _CENTERNET_OBJECTCENTERPARAMS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1080,
-  serialized_end=1350,
+  serialized_start=1240,
+  serialized_end=1510,
 )
 
 _CENTERNET_KEYPOINTESTIMATION_KEYPOINTLABELTOSTDENTRY = _descriptor.Descriptor(
@@ -178,8 +178,8 @@ _CENTERNET_KEYPOINTESTIMATION_KEYPOINTLABELTOSTDENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2108,
-  serialized_end=2165,
+  serialized_start=2268,
+  serialized_end=2325,
 )
 
 _CENTERNET_KEYPOINTESTIMATION = _descriptor.Descriptor(
@@ -327,8 +327,8 @@ _CENTERNET_KEYPOINTESTIMATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1353,
-  serialized_end=2165,
+  serialized_start=1513,
+  serialized_end=2325,
 )
 
 _CENTERNET_MASKESTIMATION = _descriptor.Descriptor(
@@ -392,8 +392,8 @@ _CENTERNET_MASKESTIMATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2168,
-  serialized_end=2402,
+  serialized_start=2328,
+  serialized_end=2562,
 )
 
 _CENTERNET_DENSEPOSEESTIMATION = _descriptor.Descriptor(
@@ -471,8 +471,8 @@ _CENTERNET_DENSEPOSEESTIMATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2405,
-  serialized_end=2676,
+  serialized_start=2565,
+  serialized_end=2836,
 )
 
 _CENTERNET_TRACKESTIMATION = _descriptor.Descriptor(
@@ -529,8 +529,45 @@ _CENTERNET_TRACKESTIMATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2679,
-  serialized_end=2878,
+  serialized_start=2839,
+  serialized_end=3038,
+)
+
+_CENTERNET_TEMPORALOFFSETESTIMATION = _descriptor.Descriptor(
+  name='TemporalOffsetEstimation',
+  full_name='object_detection.protos.CenterNet.TemporalOffsetEstimation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='task_loss_weight', full_name='object_detection.protos.CenterNet.TemporalOffsetEstimation.task_loss_weight', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=True, default_value=float(1),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='localization_loss', full_name='object_detection.protos.CenterNet.TemporalOffsetEstimation.localization_loss', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3040,
+  serialized_end=3165,
 )
 
 _CENTERNET = _descriptor.Descriptor(
@@ -562,50 +599,71 @@ _CENTERNET = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='object_detection_task', full_name='object_detection.protos.CenterNet.object_detection_task', index=3,
+      name='use_depthwise', full_name='object_detection.protos.CenterNet.use_depthwise', index=3,
+      number=13, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='compute_heatmap_sparse', full_name='object_detection.protos.CenterNet.compute_heatmap_sparse', index=4,
+      number=15, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='object_detection_task', full_name='object_detection.protos.CenterNet.object_detection_task', index=5,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='object_center_params', full_name='object_detection.protos.CenterNet.object_center_params', index=4,
+      name='object_center_params', full_name='object_detection.protos.CenterNet.object_center_params', index=6,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='keypoint_label_map_path', full_name='object_detection.protos.CenterNet.keypoint_label_map_path', index=5,
+      name='keypoint_label_map_path', full_name='object_detection.protos.CenterNet.keypoint_label_map_path', index=7,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='keypoint_estimation_task', full_name='object_detection.protos.CenterNet.keypoint_estimation_task', index=6,
+      name='keypoint_estimation_task', full_name='object_detection.protos.CenterNet.keypoint_estimation_task', index=8,
       number=7, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='mask_estimation_task', full_name='object_detection.protos.CenterNet.mask_estimation_task', index=7,
+      name='mask_estimation_task', full_name='object_detection.protos.CenterNet.mask_estimation_task', index=9,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='densepose_estimation_task', full_name='object_detection.protos.CenterNet.densepose_estimation_task', index=8,
+      name='densepose_estimation_task', full_name='object_detection.protos.CenterNet.densepose_estimation_task', index=10,
       number=9, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='track_estimation_task', full_name='object_detection.protos.CenterNet.track_estimation_task', index=9,
+      name='track_estimation_task', full_name='object_detection.protos.CenterNet.track_estimation_task', index=11,
       number=10, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='temporal_offset_task', full_name='object_detection.protos.CenterNet.temporal_offset_task', index=12,
+      number=12, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -613,7 +671,7 @@ _CENTERNET = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_CENTERNET_OBJECTDETECTION, _CENTERNET_OBJECTCENTERPARAMS, _CENTERNET_KEYPOINTESTIMATION, _CENTERNET_MASKESTIMATION, _CENTERNET_DENSEPOSEESTIMATION, _CENTERNET_TRACKESTIMATION, ],
+  nested_types=[_CENTERNET_OBJECTDETECTION, _CENTERNET_OBJECTCENTERPARAMS, _CENTERNET_KEYPOINTESTIMATION, _CENTERNET_MASKESTIMATION, _CENTERNET_DENSEPOSEESTIMATION, _CENTERNET_TRACKESTIMATION, _CENTERNET_TEMPORALOFFSETESTIMATION, ],
   enum_types=[
   ],
   options=None,
@@ -623,7 +681,7 @@ _CENTERNET = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=153,
-  serialized_end=2878,
+  serialized_end=3165,
 )
 
 
@@ -662,6 +720,13 @@ _CENTERNETFEATUREEXTRACTOR = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='use_depthwise', full_name='object_detection.protos.CenterNetFeatureExtractor.use_depthwise', index=4,
+      number=5, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -674,8 +739,8 @@ _CENTERNETFEATUREEXTRACTOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2880,
-  serialized_end=2995,
+  serialized_start=3168,
+  serialized_end=3313,
 )
 
 _CENTERNET_OBJECTDETECTION.fields_by_name['localization_loss'].message_type = object__detection_dot_protos_dot_losses__pb2._LOCALIZATIONLOSS
@@ -692,6 +757,8 @@ _CENTERNET_DENSEPOSEESTIMATION.fields_by_name['loss'].message_type = object__det
 _CENTERNET_DENSEPOSEESTIMATION.containing_type = _CENTERNET
 _CENTERNET_TRACKESTIMATION.fields_by_name['classification_loss'].message_type = object__detection_dot_protos_dot_losses__pb2._CLASSIFICATIONLOSS
 _CENTERNET_TRACKESTIMATION.containing_type = _CENTERNET
+_CENTERNET_TEMPORALOFFSETESTIMATION.fields_by_name['localization_loss'].message_type = object__detection_dot_protos_dot_losses__pb2._LOCALIZATIONLOSS
+_CENTERNET_TEMPORALOFFSETESTIMATION.containing_type = _CENTERNET
 _CENTERNET.fields_by_name['feature_extractor'].message_type = _CENTERNETFEATUREEXTRACTOR
 _CENTERNET.fields_by_name['image_resizer'].message_type = object__detection_dot_protos_dot_image__resizer__pb2._IMAGERESIZER
 _CENTERNET.fields_by_name['object_detection_task'].message_type = _CENTERNET_OBJECTDETECTION
@@ -700,6 +767,7 @@ _CENTERNET.fields_by_name['keypoint_estimation_task'].message_type = _CENTERNET_
 _CENTERNET.fields_by_name['mask_estimation_task'].message_type = _CENTERNET_MASKESTIMATION
 _CENTERNET.fields_by_name['densepose_estimation_task'].message_type = _CENTERNET_DENSEPOSEESTIMATION
 _CENTERNET.fields_by_name['track_estimation_task'].message_type = _CENTERNET_TRACKESTIMATION
+_CENTERNET.fields_by_name['temporal_offset_task'].message_type = _CENTERNET_TEMPORALOFFSETESTIMATION
 DESCRIPTOR.message_types_by_name['CenterNet'] = _CENTERNET
 DESCRIPTOR.message_types_by_name['CenterNetFeatureExtractor'] = _CENTERNETFEATUREEXTRACTOR
 
@@ -753,6 +821,13 @@ CenterNet = _reflection.GeneratedProtocolMessageType('CenterNet', (_message.Mess
     # @@protoc_insertion_point(class_scope:object_detection.protos.CenterNet.TrackEstimation)
     ))
   ,
+
+  TemporalOffsetEstimation = _reflection.GeneratedProtocolMessageType('TemporalOffsetEstimation', (_message.Message,), dict(
+    DESCRIPTOR = _CENTERNET_TEMPORALOFFSETESTIMATION,
+    __module__ = 'object_detection.protos.center_net_pb2'
+    # @@protoc_insertion_point(class_scope:object_detection.protos.CenterNet.TemporalOffsetEstimation)
+    ))
+  ,
   DESCRIPTOR = _CENTERNET,
   __module__ = 'object_detection.protos.center_net_pb2'
   # @@protoc_insertion_point(class_scope:object_detection.protos.CenterNet)
@@ -765,6 +840,7 @@ _sym_db.RegisterMessage(CenterNet.KeypointEstimation.KeypointLabelToStdEntry)
 _sym_db.RegisterMessage(CenterNet.MaskEstimation)
 _sym_db.RegisterMessage(CenterNet.DensePoseEstimation)
 _sym_db.RegisterMessage(CenterNet.TrackEstimation)
+_sym_db.RegisterMessage(CenterNet.TemporalOffsetEstimation)
 
 CenterNetFeatureExtractor = _reflection.GeneratedProtocolMessageType('CenterNetFeatureExtractor', (_message.Message,), dict(
   DESCRIPTOR = _CENTERNETFEATUREEXTRACTOR,
